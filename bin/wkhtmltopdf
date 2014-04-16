@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+case RUBY_PLATFORM
+  when /64.*linux/
+    filename = "wkhtmltopdf_linux_amd64"
+  when /linux/
+    filename = "wkhtmltopdf_linux_i386"
+  when /darwin/
+    filename = "wkhtmltopdf_macosx"
+  else
+    raise "This platform isn't supported."
+end
+
+path = Pathname.new(__FILE__).dirname.join(filename).to_s
+args = $*.map {|o| o.include?(" ") ? "'#{o}'" : o }
+
+exec "#{path} #{args.join(' ')}"
