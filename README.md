@@ -5,6 +5,7 @@ and dispatch script.
 
 This version contains wkhtmltopdf 0.12.0 for Linux, and 0.12.1-fef236e for Mac OS X.
 
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,3 +19,12 @@ And then execute:
 Or install it yourself as:
 
     $ gem install wkhtmltopdf_binary_provider
+
+
+## Use with wicked\_pdf
+
+You can use WkhtmltopdfBinaryProvider::Dispatcher.path helper method.
+
+    WickedPdf.config = {
+      exe_path: WkhtmltopdfBinaryProvider::Dispatcher.path
+    }
