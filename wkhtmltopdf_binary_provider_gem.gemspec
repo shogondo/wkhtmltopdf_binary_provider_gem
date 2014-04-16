@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'wkhtmltopdf_binary_provider_gem/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "wkhtmltopdf_binary_provider_gem"
+  spec.name          = "wkhtmltopdf_binary_provider"
   spec.version       = WkhtmltopdfBinaryProviderGem::VERSION
   spec.authors       = ["Shou Takenaka"]
   spec.email         = ["shou_takenaka@guihua.jp"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = "Provides wkhtmltopdf binaries"
+  spec.description   = "Provides wkhtmltopdf binaries"
+  spec.homepage      = "https://github.com/shoutakenaka/wkhtmltopdf_binary_provider_gem"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
