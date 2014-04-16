@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'wkhtmltopdf_binary_provider_gem/version'
+require 'wkhtmltopdf_binary_provider/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "wkhtmltopdf_binary_provider"
-  spec.version       = WkhtmltopdfBinaryProviderGem::VERSION
+  spec.version       = WkhtmltopdfBinaryProvider::VERSION
   spec.authors       = ["Shou Takenaka"]
   spec.email         = ["shou_takenaka@guihua.jp"]
   spec.summary       = "Provides wkhtmltopdf binaries"
