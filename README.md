@@ -1,12 +1,15 @@
-# WkhtmltopdfBinaryProviderGem
+# wkhtmltopdf\_binary\_provider
 
-TODO: Write a gem description
+This gem providers wkhtmltopdf binaries (for Linux and Mac OS X)
+and dispatch script.
+
+This version contains wkhtmltopdf 0.12.0 for Linux, and 0.12.1-fef236e for Mac OS X.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'wkhtmltopdf_binary_provider_gem'
+    gem 'wkhtmltopdf_binary_provider'
 
 And then execute:
 
@@ -14,16 +17,4 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install wkhtmltopdf_binary_provider_gem
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( http://github.com/<my-github-username>/wkhtmltopdf_binary_provider_gem/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    $ gem install wkhtmltopdf_binary_provider
